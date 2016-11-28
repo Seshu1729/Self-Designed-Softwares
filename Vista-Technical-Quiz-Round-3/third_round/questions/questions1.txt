@@ -1,0 +1,18 @@
+var questions = [
+    [ "Question 1","Which of these sounds would you associate with the heart ?","Tring Tring","Tap Tap","Click Click","Dhak Dhak","Dhak Dhak" ],
+    [ "Question 2","Who is the 'Bharat Ka Veer Putra Aaccording to the title of a 2013 TV Series ?","Tipu Sultan","Chandragupta Maurya","Maharana Pratap","Ashoka","Maharana Pratap" ],
+    [ "Question 3","Que3?","Opt1","Opt2","Opt3","Opt4","Opt3" ],
+    [ "Question 4","Que4?","Opt1","Opt2","Opt3","Opt4","Opt4" ],
+    [ "Question 5","Que5?","Opt1","Opt2","Opt3","Opt4","Opt1" ],
+    [ "Question 6","Que6?","Opt1","Opt2","Opt3","Opt4","Opt2" ],
+    [ "Question 7","Que7?","Opt1","Opt2","Opt3","Opt4","Opt3" ],
+    [ "Question 8","Que8?","Opt1","Opt2","Opt3","Opt4","Opt4" ],
+    [ "Question 9","Que9?","Opt1","Opt2","Opt3","Opt4","Opt1" ],
+    [ "Question 10","Que10?","Opt1","Opt2","Opt3","Opt4","Opt2" ],
+    [ "Question 11","Que11?","Opt1","Opt2","Opt3","Opt4","Opt3" ],
+    [ "Question 12","Que12?","Opt1","Opt2","Opt3","Opt4","Opt4" ],
+    [ "Question 13","Que13?","Opt1","Opt2","Opt3","Opt4","Opt1" ],
+    [ "Question 14","Que14?","Opt1","Opt2","Opt3","Opt4","Opt2" ],
+    [ "Question 15","Que15?","Opt1","Opt2","Opt3","Opt4","Opt3" ]
+];
+filpQue = ["newQue?","opt1","opt2","opt3","opt4","opt1"];

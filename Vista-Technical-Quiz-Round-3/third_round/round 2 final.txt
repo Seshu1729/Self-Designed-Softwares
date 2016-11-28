@@ -1,0 +1,93 @@
+var questions = [
+    [ "Question 1","Which of these sounds would you associate with the heart ?","Tring Tring","Tap Tap","Click Click","Dhak Dhak","Dhak Dhak" ],
+    [ "Question 2","Who is the 'Bharat Ka Veer Putra Aaccording to the title of a 2013 TV Series ?","Tipu Sultan","Chandragupta Maurya","Maharana Pratap","Ashoka","Maharana Pratap" ],
+    [ "Question 3","In 2013, where did the natural calamity known as Himalayan tsunami occur?"," Uttrakhand","Arunachal Pradesh","Jammu and Kashmir"," Sikkim","Uttrakhand" ],
+    [ "Question 4","Which team retained the ashes Trophy in 2013 ?","Australia","South Africa","West Indies ","England","England" ],
+    [ "Question 5","In the Ramayana, Which demon impersonated Rama's voice, screaming, 'Lakshman! Help me'?","Surpanakha ","Khara ","Maricha","Dushana","Maricha" ],
+    [ "Question 6","Who is the only leader to be elected Prime Minister of Pakistan three times ?","Syed Yousaf Raza Gillani ","Benazir Bhutto","Liaqat Ali Khan","Nawaz Sharif","Nawaz Sharif" ],
+    [ "Question 7","The black widow, which eats the male counterpart after mating, as a female species of which animal ?","Sloth "," Ant ","Spider","Termite","Spider" ],
+    [ "Question 8","Douglas Engelbert, who passed away in 2013, is credited as the inventor of which of these products ?","Mobile Phone","Computer Mouse","Bluetooth Mouse","Digital camera","Mobile Phone" ],
+    [ "Question 9","In 1850, the first experimental electric telegraph line in India was set up between Calcutta and which place ?","Diamond Harbour","Darjeeling","Murshidabad","Dhaka","Diamond Harbour" ],
+    [ "Question 10","Which of these persons has not walked on the Moon ?","Charles Duke","James A Lovell","Alan Bean ","Pete Conrad","James A Lovell" ],
+    [ "Question 11","Who was the chairman of the Indian Calendar Reform Committee that initiated the adoption of Saka calendar as the Indian national Calendar ?","Meghnad Saha","Subrahmanyan Chandrasekhar","Prabodh Chandra Sengupta","Vainu Bappu","Meghnad Saha" ],
+    [ "Question 12","Where was Durga Shakti Nagpal, IAS, serving when she was suspended by the UP Govt?","Sant Ravidas Nagar","Sant Kabir Nagar","Ambedhkar Nagar","Gautam Buddh Nagar","Gautam Buddh Nagar" ],
+    [ "Question 13","During Kargil War, Who was the Indian Army chief of staff?","Ved Prakash Malik","Sankar Roy Chowdary"," Nirmal chandar Vijay","Sundar rajan Padmanabhan","Ved Prakash Malik" ],
+    [ "Question 14","When were the first general elections of Independent India conducted?","1948-49","1949-50","1950-51","1951-52","1951-52" ],
+    [ "Question 15","Which of the following cities is not one of the capitals of South Africa?","Cape town","Pretoria","Johannesburg","Bloemfontein ","Bloemfontein " ]
+];
+filpQue = ["Who among the following is also called as  Savya sachi, Jishnu, Dhanunjaya?","Rama","Arjuna","Krishna","Karna","Arjuna"];
+
+
+***************************************************************************************************
+
+
+ var questions = [
+    [ "Question 1","Which is following is worn to arm?","Aravanki","Vaddanam","Haram","Patteelu","Aravanki" ],
+    [ "Question 2","which of the following structures was built in the memory of soldiers who fought in world 
+war 1?"," Gateway of India","Victoria momorial","Vijay stambh","India Gate","India Gate" ],
+    [ "Question 3","According to Ramayana, Who of the following are the sons of the same mother?","Rama, Lakshmana ","Lakshmana, Satrugna ","Lakshmana, Bharatha","Bharatha, Satrugna","Lakshmana, Satrugna " ],
+    [ "Question 4","Which of the following was banned by Supreme Court of India in 2014?","Kick Boxing","Malla Yuddam","Kalari Payattu","Jallikattu","Jallikattu" ],
+    [ "Question 5","Which political party used to have swastik symbol?","Communist Party of China","Republican Party, USA","National Socialist Party, Germany","Liberal Democratic Party of Japan","National Socialist Party, Germany" ],
+    [ "Question 6","Who is the author of "Koonalamma Padalu"?","Arudra","Gaddar","Sri Sri","Devulapalli Krishnasastry
+","Arudra" ],
+    [ "Question 7","Which of these princely states integrated with the Indian union in 1947 without initially refusing to do so?","Hyderabad","Junaghad","Jaipur","Travancore","Jaipur" ],
+    [ "Question 8","Who was the first person to receive a Jnanpit award for a Telugu work?","C. Narayana reddy","Viswanatha Satyanarayana","Ravuri Bharadwaja"," Srirangam Srinivasarao
+","Viswanatha Satyanarayana" ],
+    [ "Question 9","With whom did Sania Mirza won mixed double title in US Open and French Open?","Vishnu Vardhan","Liander paes","Rohan Bopanna","Mahesh Bhupathi","Mahesh Bhupathi" ],
+    [ "Question 10","How do we better know Nararendranath Datta?","Dayananda saraswathi","Sir Aurobindo","Swami Vivekanada","Ramakrishna Paramahamsa","Swami Vivekanada" ],
+    [ "Question 11"," In which county is the historic city of Bukhara?"," Uzbekistan","Afghanistan","Turkmenistan","Kazakhstan
+"," Uzbekistan" ],
+    [ "Question 12"," What is the escape velocity required for a rocket to leave earth?","1.6km/sec","9.4km/sec","11.2km/sec","15.9km/sec","11.2km/sec" ],
+    [ "Question 13","Which of these is the name of a drink consumed by Hindu Gods?","Amrit Boond","Madhu Pan","Ksheer Sagar","Som ras","Som ras" ],
+    [ "Question 14","Which of these is a kind of song to make children fall asleep?","Chori","Mori","Lori","Hori","Lori" ],
+    [ "Question 15","Arrange these ports in the order in which you will come across them, while traveling from Gujarat to Odisha by sea route. (A) Visakhapatnam (B) Kandla (C) Paradip (D) Mangalore","A-D-B-C","B-D-A-C","D-B-C-A","A-C-B-D","B-D-A-C" ]
+];
+filpQue = ["Where was Mughal empress Mumtaz Mahal originally buried in 1631 ?","Agra","Burhanpur","Gwalior","Lahore","Burhanpur"];];
+
+***************************************************
+
+  var questions = [
+    [ "Question 1","RASH/Prickly heat (Ghamoriyan) is associated with?","Hair","Skin","Nails","Eyes","Skin" ],
+    [ "Question 2","In Which of these sports are a “ball” , “gloves” and “helmet” part of playing equipment ?","Hockey","Volleyball","Tennis","Badminton","Hockey" ],
+    [ "Question 3","In which of these sectors was 51% FDI permitted by the Government of India in 2012?","Multi-brand retail","Healthcare","Life Insurance","Civil Aviation","Multi-brand retail" ],
+    [ "Question 4","Which of these metals or non-metals is the main constituent of both brass and bronze ?","Carbon","Lead","Copper","Silver","Copper" ],
+    [ "Question 5","On which of these routes does India’s fastest passenger train run ?","New Delhi – Bhopal","New Delhi – Jaipur","Mumbai – Pune","New Delhi – Lucknow","New Delhi – Bhopal" ],
+    [ "Question 6","As a captain, which cricketer holds the record for winning the most number of tests?","Graeme Smith","Ricky Ponting","Steve Waugh","Arjuna Ranatunga","Ricky Ponting" ],
+    [ "Question 7","The first woman president of India, Pratibha Patil, was the first woman governor of which state ?","Maharashtra","Rajasthan","Gujarat","Goa","Rajasthan" ],
+    [ "Question 8","Where was Mughal empress Mumtaz Mahal originally buried in 1631 ?","Agra","Burhanpur","Gwalior","Lahore","Burhanpur" ],
+    [ "Question 9"," In which sport does Saketh Myneni win a gold medal and a silver medal in the Incheon Games representing India?","tennis","badminton"," table tennis","squash","tennis" ],
+    [ "Question 10","Which is the tallest bird in the world, standing at about 6 feet tall?","ostrich"," sarus crane"," Trumpeter Swan","Toco Toucan
+"," sarus crane" ],
+    [ "Question 11"," In the popular proverb Dum Dabakar Bhagna,what is the meaning of Dum?","khazana","Hathiyar","poonch"," gardan","poonch" ],
+    [ "Question 12","Which of these bridges completed its 100 years in February 2014?","Gandhi Setu, Patna","Pamban Rail Bridge","Howrah Bridge","Napier Bridge, Chennai","Pamban Rail Bridge" ],
+    [ "Question 13","What nickname is given by western media to the 2014 pro- democracy student movement in Hong Kong?"," Red revolution","Jasmine revolution","People’s revolution","Umbrella revolution","Umbrella revolution" ],
+    [ "Question 14"," Brothers-in-law Burton Baskin and Irvine Robbins stated out in which business?","insurance","filmmaking","readymade garments","ice cream","ice cream" ],
+    [ "Question 15","According to the Mahabharata, which of these alternative names did Krishna get after slaying a demon?","Vasudeva","Damodara"," Madhusudhana","Giridhari
+"," Madhusudhana" ]
+];
+filpQue = ["What was set up in India on the recommendations of the Hilton Young Commission?","State bank of India","Reserve Bank of India","Central Bureau of Investigation","New Delhi as India’s capital","Reserve Bank of India1"];];
+
+
+
+
+
+
+
+
+var questions = [
+    [ "Question 1","Which is the first Indian Satellite?","Columbia","Rohini","Baskara","Aryabatta","Aryabatta" ],
+    [ "Question 2","Which country is called as \"Land of Raising Sun\"?","Japan","Korea","Indonesia","Australia","Japan" ],
+    [ "Question 3","Which Indian city is called as \"Pink City\"?","Bangalore","Jaipur","Bhopal","Pune","Jaipur" ],
+    [ "Question 4","The River that flows through Delhi is?","Ganges","Indua","Yamuna","Narmada","Yamuna" ],
+    [ "Question 5","The Gateway of India is in?","Chennai","Mumbai","Kolkata","New Delhi","Mumbai" ],
+    [ "Question 6","January 15th is celebrated as?","Republic day","Teacher's day","Ugadi","Army day","Army day" ],
+    [ "Question 7","Boat race is popular sport of which state?","Karnataka","Kerala","Tamil nadu","Andhra pradesh","Kerala" ],
+    [ "Question 8","Which state has longest coast line?","Andhra Pradesh","Himachal Pradesh","Uttar pradesh","Gujarat","Gujarat" ],
+    [ "Question 9","What is the latest version of Android?","Jelly Bean","MarshMallow","Lollipop","Kitkat","MarshMallow" ],
+    [ "Question 10","Golden Temple is situated in?","New Delhi","Agra","Amritsar","Mumbai","Amritsar" ],
+    [ "Question 11","Captain of Under-19 Indian cricket team which won the world cup?","Kohli","Sachin","Ganguly","Dhoni","Kohli" ],
+    [ "Question 12","Who is the present governor of RBI","D.Subbarao","N.D.Tiwari","Sharad Pawar","Raguram Rajan","Raguram Rajan" ],
+    [ "Question 13","Which city will host Olympics this year?","London","Beijing","Rio","Auckland","Rio" ],
+    [ "Question 14","Lego Before Wicket is a term used in which sport?","Tennis","Cricket","Foot ball","Basket ball","Cricket" ],
+    [ "Question 15","Nandamuri BalaKrishna is the MLA of which constituency?","Hindupur","Tirupathi","Kadapa","Vijayawada","Hindupur" ]
+];

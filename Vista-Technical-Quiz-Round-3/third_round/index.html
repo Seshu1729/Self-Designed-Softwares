@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Login</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/indexextrastyle.css" rel="stylesheet">
+		<script>
+			var audio = new Audio('music/Main back ground.m4a');
+			audio.play();
+			function validate()
+			{
+			    audio.pause();
+			    audio.currentTime = 0.0;
+			    var main=window.open("main.html","xxx");
+			    main.moveTo(0,0);
+			    main.resizeTo(screen.width,screen.height)
+			    window.close();
+			}
+
+		</script>
+	</head>
+	<body>
+		<ul>
+  			<li><a href="#" class="round green" onclick="validate()">Start<span class="round">Get Ready To Have Fun</span></a></li>
+		</ul>
+	</body>
+</html>

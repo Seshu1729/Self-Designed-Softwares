@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+  	<head>
+	    <title>Vista</title>
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/extrastyle.css" rel="stylesheet">
+	    <script src="js/jquery-1.11.2.js"></script>
+		<script src="js/countdown360.js"></script>
+  	</head>
+  <body>
+  	<div id="sound"></div>
+	<div class="well blue">
+		<font color="white" size="25"  face="Amaranth-Bold">The Wise Quackers</font>
+		<div id="container" class="clock">
+			<div id="countdown"></div>				
+		</div>
+	</div>
+    <div class="rightdiv">
+	    <div class="container main">
+	      	<div class="well blue">
+	      		<h4>
+		        	<div id="questions">
+						<div class="container">
+			        		<input type="text" class="btn btn-default col-xs-3 col-xs-offset-1" disabled="disabled" id="lab"></input>
+			        		<input type="text" class="btn btn-default col-xs-offset-2 col-xs-3" disabled="disabled" id="money" value="0"></input>
+			        	</div>
+			  
+			        	<h2>
+			        		<input type="text" class="btn btn-default btn-lg btn-block col-xs-4 que" disabled="disabled" id="que"></input>
+			        	</h2>
+		        		<br><br><br><br><br>
+		        		<div>
+			        		<div class="row col-centeed">
+				        		<input type="button" id="cho1" class="btn btn-primary col-xs-4 col-xs-offset-1 nodisplay opt" onclick="nextQuestion(this)"></input>
+				        		<input type="button" id="cho2" class="col-xs-offset-2 btn btn-primary col-xs-4 nodisplay opt" onclick="nextQuestion(this)"></input>
+				    		</div>
+				    		<br>
+				    		<div class="row col-cenered">
+				        		<input type="button" id="cho3" class="btn btn-primary col-xs-4 col-xs-offset-1 nodisplay opt" onclick="nextQuestion(this)"></input>
+				        		<input type="button" id="cho4" class="col-xs-offset-2 btn btn-primary col-xs-4 nodisplay opt" onclick="nextQuestion(this)"></input>
+				    		</div>
+				    		<div>
+				    			<input type="button" id="showoptions" style="margin:0 auto;display:block;" value="Show Options" class="btn btn-default btn-lg" onclick="showoptions();"></input>
+				    		</div>
+				    		<div>
+				    			<input type="button" id="nextquestion" style="margin:0 auto;" value="Next Question" class="btn btn-default btn-lg nodisplay" onclick="nextquestion();"></input>
+				    		</div>
+				    	</div>
+		      		</div>
+		      	</h4>
+	      		<h4><center><input type="button" id="iquit" class="btn btn-primary quit" onclick="quit(this)" value="I QUIT"></input></center></h4>
+	      		<h4><center><input type="button" id="next" style="display:none;" class="btn btn-default btn-lg" onclick="showQuestion();" value="NEXT QUESTION"></input></center></h4>
+	      	</div>
+	    </div>
+	    <div class="container lifeline">
+	      	<div class="well blue">
+		        <h3>
+		        	<div>
+		        		<center>
+				          	<button id="lifeline1" class="btn btn-info life" onclick="activateLifeline1(this)">Flip The Question</button>
+				          	<button id="lifeline3" class="btn btn-info life" onclick="activateLifeline2(this)">Take 50-50</button>
+				          	<button id="lifeline2" class="btn btn-info life" onclick="activateLifeline3(this)">Add 15 Seconds</button>
+			          	</center>
+		          	</div>
+		        </h3>
+	      	</div>
+	    </div>
+	</div>
+	<div class="leftdiv">
+			<div class="well blue">
+				<input type="text" class="btn btn-info" disabled="disabled" id="m1"></input>
+				<input type="text" class="btn btn-info" disabled="disabled" id="m2"></input>
+				<input type="text" class="btn btn-info" disabled="disabled" id="m3"></input>
+				<input type="text" class="btn btn-info" disabled="disabled" id="m4"></input>
+				<input type="text" class="btn btn-info" disabled="disabled" id="m5"></input>
+				<input type="text" class="btn btn-info" disabled="disabled" id="m6"></input>
+				<input type="text" class="btn btn-info" disabled="disabled" id="m7"></input>
+				<input type="text" class="btn btn-info" disabled="disabled" id="m8"></input>
+				<input type="text" class="btn btn-info" disabled="disabled" id="m9"></input>
+				<input type="text" class="btn btn-info" disabled="disabled" id="m10"></input>
+				<input type="text" class="btn btn-info" disabled="disabled" id="m11"></input>
+				<input type="text" class="btn btn-info" disabled="disabled" id="m12"></input>
+				<input type="text" class="btn btn-info" disabled="disabled" id="m13"></input>
+				<input type="text" class="btn btn-info" disabled="disabled" id="m14"></input>
+				<input type="text" class="btn btn-info" disabled="disabled" id="m15"></input>
+			</div>
+	</div>
+	<font color="red">Designed By Seshu Chadaram(CSE-1 3rd Year)</font>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/extrascript.js"></script>
+  </body>
+</html>
