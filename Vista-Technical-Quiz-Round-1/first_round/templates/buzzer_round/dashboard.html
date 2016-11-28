@@ -1,0 +1,83 @@
+{% extends "buzzer_round/header.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/extrastyle-dashboard.css' %}" type="text/css">
+
+    {% if request.user.is_superuser %}
+        <div class="container">
+                <div class="col-xs-4">
+                    <div onclick="location.href='/unlock_question/?question_link={{ selected_questions.0.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">1</div>
+                    </div>
+                    <div onclick="location.href='/unlock_question/?question_link={{ selected_questions.1.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">4</div>
+                    </div>
+                    <div onclick="location.href='/unlock_question/?question_link={{ selected_questions.2.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">7</div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div onclick="location.href='/unlock_question/?question_link={{ selected_questions.3.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">2</div>
+                    </div>
+                    <div onclick="location.href='/unlock_question/?question_link={{ selected_questions.4.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">5</div>
+                    </div>
+                    <div onclick="location.href='/unlock_question/?question_link={{ selected_questions.5.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">8</div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div onclick="location.href='/unlock_question/?question_link={{ selected_questions.6.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">3</div>
+                    </div>
+                    <div onclick="location.href='/unlock_question/?question_link={{ selected_questions.7.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">6</div>
+                    </div>
+                    <div onclick="location.href='/unlock_question/?question_link={{ selected_questions.8.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">9</div>
+                    </div>
+                </div>
+            </div>
+    {% else %}
+        <div class="container">
+                <div class="col-xs-4">
+                    <div onclick="location.href='/view_question/?question_link={{ selected_questions.0.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">1</div>
+                    </div>
+                    <div onclick="location.href='/view_question/?question_link={{ selected_questions.1.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">4</div>
+                    </div>
+                    <div onclick="location.href='/view_question/?question_link={{ selected_questions.2.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">7</div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div onclick="location.href='/view_question/?question_link={{ selected_questions.3.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">2</div>
+                    </div>
+                    <div onclick="location.href='/view_question/?question_link={{ selected_questions.4.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">5</div>
+                    </div>
+                    <div onclick="location.href='/view_question/?question_link={{ selected_questions.5.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">8</div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div onclick="location.href='/view_question/?question_link={{ selected_questions.6.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">3</div>
+                    </div>
+                    <div onclick="location.href='/view_question/?question_link={{ selected_questions.7.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">6</div>
+                    </div>
+                    <div onclick="location.href='/view_question/?question_link={{ selected_questions.8.id }}&table_id={{ table_id }}&game_id={{ game_id }}';" class="box">
+                        <div class="content">9</div>
+                    </div>
+                </div>
+            </div>
+    {% endif %}
+    
+{% endblock %}

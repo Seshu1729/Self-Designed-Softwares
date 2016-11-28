@@ -1,0 +1,100 @@
+{% extends "buzzer_round/header.html" %}
+{% block title %}Vista Quiz{% endblock %}
+{% block content %}
+
+    <script>
+        $( window ).load(function(){
+            var options = [];
+            var start = new Date();
+
+            $("#option1").on('click', function() {
+                options.push("{{ options.option1 }}");
+                document.getElementById("option1").className = "element-animation1 btn btn-lg btn-danger btn-block disabled";
+            });
+
+            $("#option2").on('click', function() {
+                options.push("{{ options.option2 }}");
+                document.getElementById("option2").className = "element-animation1 btn btn-lg btn-danger btn-block disabled";
+            });
+
+            $("#option3").on('click', function() {
+                options.push("{{ options.option3 }}");
+                document.getElementById("option3").className = "element-animation1 btn btn-lg btn-danger btn-block disabled";
+            });
+
+            $("#option4").on('click', function() {
+                options.push("{{ options.option4 }}");
+                document.getElementById("option4").className = "element-animation1 btn btn-lg btn-danger btn-block disabled";
+            });
+
+            $("#reset").on('click', function() {
+                options = [];
+                document.getElementById("option1").className = "element-animation1 btn btn-lg btn-primary btn-block";
+                document.getElementById("option2").className = "element-animation1 btn btn-lg btn-primary btn-block";
+                document.getElementById("option3").className = "element-animation1 btn btn-lg btn-primary btn-block";
+                document.getElementById("option4").className = "element-animation1 btn btn-lg btn-primary btn-block";
+            });
+
+            $("#submit").on('click', function(){
+                var end = new Date();
+                var diff = end - start;
+                extended_url = options.join("$");
+                window.location = "/submit_answer/?user_answer="+extended_url+"&time_taken="+diff+"&question_link={{ selected_question.id }}&table_id={{ table_id }}&game_id={{ game_id }}";
+            });
+        });
+    </script>
+
+
+
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/extrastyle-dashboard.css' %}" type="text/css">
+
+    <div class="container-fluid">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>{{ selected_question.question_description }}</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xs-3 col-xs-offset-5">
+                       <div id="loadbar" style="display: none;">
+                          <div class="blockG" id="rotateG_01"></div>
+                          <div class="blockG" id="rotateG_02"></div>
+                          <div class="blockG" id="rotateG_03"></div>
+                          <div class="blockG" id="rotateG_04"></div>
+                          <div class="blockG" id="rotateG_05"></div>
+                          <div class="blockG" id="rotateG_06"></div>
+                          <div class="blockG" id="rotateG_07"></div>
+                          <div class="blockG" id="rotateG_08"></div>
+                        </div>
+                    </div>
+
+                    <div class="quiz" id="quiz" data-toggle="buttons">
+                        {% if request.user.is_superuser %}
+                            <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><label style="margin-top:18px;">A</label></span> <input type="radio" class="display_option" name="q_answer" id="option1">{{ options.option1 }}</label>
+                            <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><label style="margin-top:18px;">B</label></span> <input type="radio" class="display_option" name="q_answer" id="option1">{{ options.option2 }}</label>
+                            <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><label style="margin-top:18px;">C</label></span> <input type="radio" class="display_option" name="q_answer" id="option1">{{ options.option3 }}</label>
+                            <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><label style="margin-top:18px;">D</label></span> <input type="radio" class="display_option" name="q_answer" id="option1">{{ options.option4 }}</label>
+                        {% else %}
+                            <label class="element-animation1 btn btn-lg btn-primary btn-block" id="option1"><span class="btn-label"><label style="margin-top:18px;">A</label></span> <input type="radio" class="display_option" name="q_answer">{{ options.option1 }}</label>
+                            <label class="element-animation2 btn btn-lg btn-primary btn-block" id="option2"><span class="btn-label"><label style="margin-top:18px;">B</label></span> <input type="radio" class="display_option" name="q_answer">{{ options.option2 }}</label>
+                            <label class="element-animation3 btn btn-lg btn-primary btn-block" id="option3"><span class="btn-label"><label style="margin-top:18px;">C</label></span> <input type="radio" class="display_option" name="q_answer">{{ options.option3 }}</label>
+                            <label class="element-animation4 btn btn-lg btn-primary btn-block" id="option4"><span class="btn-label"><label style="margin-top:18px;">D</label></span> <input type="radio" class="display_option" name="q_answer">{{ options.option4 }}</label>
+                        {% endif %}
+                    </div>
+                </div>
+                {% if request.user.is_superuser %}
+                    <div class="modal-footer text-muted">
+                        <button class="btn btn-primary" onclick="window.location = '/dashboard/?table_id={{ table_id }}&game_id={{ game_id }}'">Back To Dashboard</button>
+                        <button class="btn btn-primary" onclick="window.location = '/leader_board/?table_id={{ table_id }}&game_id={{ game_id }}'">View Leaderboard</button>
+                    </div>
+                {% else %}
+                    <div class="modal-footer text-muted">
+                        <button class="btn btn-primary" id="submit" value="{{ game_id }}">Submit</button>
+                        <button class="btn btn-primary" id="reset">Reset</button>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+body
+{
+	background-color: black;
+}
+
+.box
+{
+	padding: 20% 40%;
+	text-align: center;
+	background-color: white;
+	border-radius: 20px;
+	margin: 3% 3% 3% 3%;
+	font-size: 30px;
+	display: block;
+	cursor: pointer;
+}
+
+.container
+{
+	margin-top: 3%;
+}

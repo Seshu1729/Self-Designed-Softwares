@@ -1,0 +1,42 @@
+{% extends "buzzer_round/header.html" %}
+{% block title %}Vista Quiz{% endblock %}
+{% block content %}
+
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/extrastyle-dashboard.css' %}" type="text/css">
+
+    <div class="container-fluid">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>LEADER BOARD</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xs-3 col-xs-offset-5">
+                       <div id="loadbar" style="display: none;">
+                          <div class="blockG" id="rotateG_01"></div>
+                          <div class="blockG" id="rotateG_02"></div>
+                          <div class="blockG" id="rotateG_03"></div>
+                          <div class="blockG" id="rotateG_04"></div>
+                          <div class="blockG" id="rotateG_05"></div>
+                          <div class="blockG" id="rotateG_06"></div>
+                          <div class="blockG" id="rotateG_07"></div>
+                          <div class="blockG" id="rotateG_08"></div>
+                        </div>
+                    </div>
+
+                    <div class="quiz" id="quiz" data-toggle="buttons">
+                        {% for report in report_list %}
+                            <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><label style="margin-top:18px;">{{ report.table_id }}</label></span> <input type="radio" class="display_option" name="q_answer" value="1">{{ report.tame_taken }}({{ report.questions_answered }})</label>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% if request.user.is_superuser %}
+                    <div class="modal-footer text-muted">
+                        <button class="btn btn-primary" onclick="window.location = '/dashboard/?table_id={{ table_id }}&game_id={{ game_id }}'">Back To Dashboard</button>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
