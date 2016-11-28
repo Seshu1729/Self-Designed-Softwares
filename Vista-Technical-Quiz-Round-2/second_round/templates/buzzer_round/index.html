@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vista Login</title>
+
+        {% load staticfiles %}
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+
+        {% load staticfiles %}
+		<link rel="stylesheet" href="{% static 'css/extrastyle-login.css' %}" type="text/css">
+
+	</head>
+
+	<body>
+
+	<div class="header-w3l">
+            <h1>The Wise Quackers</h1>
+        </div>
+        <div class="mail-form shadow-agile">
+            <div>
+                {% if default_message %}
+                    {{ default_message }}
+                {% endif %}
+            </div>
+            <form action="/validation/" method="post">
+                {% csrf_token %}
+                <input type="text" name="username" placeholder="Username" required=""/>
+                <input type="password" name="password" class="padding-wthree"  placeholder="Password" required=""/><hr>
+                <input type="text" name="table_id" placeholder="Table ID" required=""/>
+                <input type="text" name="game_id" class="padding-wthree"  placeholder="Game Id" required=""/>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+
+	</body>
+</html>

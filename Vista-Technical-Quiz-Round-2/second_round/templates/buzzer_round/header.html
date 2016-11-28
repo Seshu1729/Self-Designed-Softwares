@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'css/extrastyle.css' %}" type="text/css">
+
+
+        {% load staticfiles %}
+        <script src="{% static 'js/jquery-1.11.2.js' %}"></script>
+        {% load staticfiles %}
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        {% load staticfiles %}
+        <script src="{% static 'js/extrascript.js' %}"></script>
+
+    </head>
+    <body>
+        {% block content %}
+        {% endblock  %}
+    </body>
+</html>
