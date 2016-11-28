@@ -1,0 +1,82 @@
+.col-centered
+{
+    float: none;
+}
+body 
+{ 
+    background: url(../images/2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.main
+{
+    min-height: 75%;
+}
+div.blue
+{
+    margin: 30px;
+    background: transparent;
+    box-shadow: 0px 0px 10px 10px rgba(255,255,255,0.9);
+    opacity: 1.0;
+}
+div.clock
+{
+    float: right;
+}
+.header,.main,.lifeline
+{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+.leftdiv
+{
+    float: right;
+    width: 20%;
+}
+.rightdiv
+{
+  float: left;
+  width: 80%;
+}
+#m1,#m2,#m3,#m4,#m5,#m6,#m7,#m8,#m9,#m10,#m11,#m12,#m13,#m14,#m15
+{
+    width: 100%;
+}
+.wrapper
+{
+	text-align: center;
+}
+.full
+{
+	position: absolute;
+	top: 50%;
+	right: 45%;
+}
+.safepoint
+{
+    background-color: white;
+    color:black;
+}
+.nodisplay
+{
+    display: none;
+}
+.startquiz
+{
+    
+}
+.que
+{
+    font-size: 30px;
+}
+.opt
+{
+    font-size: 25px;
+}
+.quit
+{
+    font-size: 15px;
+}
